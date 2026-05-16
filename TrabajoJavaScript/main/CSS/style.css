@@ -1,0 +1,106 @@
+/* 1. Reset básico para quitar espacios en blanco del navegador */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #020202;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif; /* Una letra más moderna */
+}
+
+/* Parte de arriba */
+.header {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;     
+    text-decoration: none;
+    padding: 10px 5%;        
+    color: white;
+    width: 100%;  
+    list-style: none;           
+}
+
+
+.header nav ul {
+    display: flex;          
+    list-style: none;       
+    gap: 30px;              
+}
+
+.header nav ul li a {
+
+    color: white;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: color 0.3s; 
+    list-style: none;
+    
+}
+
+/* Efecto al pasar el ratón */
+.header nav ul li a:hover {
+    color: #ffca28;         
+}
+
+
+/* Logo */
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.imgLogo {
+    margin: 2%;
+    height: 100px;           
+    width: auto;           
+    border-radius: 55px;   
+    box-shadow: inset 0px 2px 5px rgba(0, 0,0, 0.5);
+    color:white;
+}
+
+.JavalonIMG {
+    width: 60%;
+    height: 80%;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 3%;
+    border-radius: 7px;
+    box-shadow: 5px 5px 500px 5px #9696955d;
+}
+
+.main-info :hover {
+    box-shadow: 7px 7px 500px 7px #efc443c0;
+}
+
+
+ /* Ejercicios  */
+
+
+.box {
+    
+    color: #fff;
+    background-color: rgb(54, 53, 53);
+    
+    align-items: center;
+    justify-content: center;
+    margin: 5%;
+    padding: 5%;
+    border-radius: 25px;
+   
+
+}
+
+.content {
+    color: white;
+    margin: 0;
+    margin-top: 25%;
+    padding: 0;
+}
+
+.info-bottom {
+    background-color: rgb(54, 53, 53);
+}
+
+
