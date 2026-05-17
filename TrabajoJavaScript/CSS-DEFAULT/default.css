@@ -1,0 +1,123 @@
+/* 1. Reset básico para quitar espacios en blanco del navegador */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #020202;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif; /* Una letra más moderna */
+    background-color: #020202;
+}
+.header {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;     
+    text-decoration: none;
+    padding: 10px 5%;        
+    color: white;
+    width: 100%;             
+}
+
+/* Color blanco indice letra */ 
+
+.header nav ul {
+     list-style: none;
+     display: flex;
+     gap:20px;
+     padding: 0;
+     margin: 0;
+}
+.header nav ul li a {
+    color: white;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: color 0.3s; 
+    text-decoration: none;
+    
+}
+
+/* Efecto al pasar el ratón */
+.header nav ul li a:hover {
+    color: #ffca28;         
+}
+
+
+
+/* 3. Control del Logo */
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.imgLogo {
+    margin: 2%;
+    height: 100px;           
+    width: auto;           
+    border-radius: 55px;   
+    box-shadow: inset 0px 2px 5px rgba(0, 0,0, 0.5);
+    color:white;
+}
+
+
+body {
+    font-family: Arial, Helvetica, sans-serif; 
+}
+
+
+
+/* estilo para ejercicios */
+
+.contenedor {
+    background-color: #1e1e1e !important;
+    color: #ffffff !important;
+    width: 350px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    padding: 20px;
+    
+    /* Borde gris claro fino que destaca sobre el fondo negro */
+    border: 1px solid #333333;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+}
+
+/* Forzamos color */
+.contenedor h3, .contenedor p, .contenedor div, .contenedor span, .contenedor ul, .contenedor li {
+    color: #ffffff !important;
+}
+
+/* Cajas de entrada gris oscuro con texto blanco */
+.contenedor input {
+    display: block;
+    width: 100%;
+    margin: 10px 0;
+    padding: 8px;
+    box-sizing: border-box;
+    background-color: #2a2a2a !important;
+    color: #ffffff !important;
+    border: 1px solid #444444;
+    border-radius: 4px;
+}
+
+/* Botón azul que resalta bien en entornos oscuros */
+.contenedor button {
+    display: block;
+    width: 100%;
+    margin: 10px 0;
+    padding: 8px;
+    box-sizing: border-box;
+    background-color: #3498db !important;
+    color: #ffffff !important;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.contenedor button:hover {
+    background-color: #2980b9 !important;
+}
+

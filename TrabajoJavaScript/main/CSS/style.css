@@ -1,0 +1,167 @@
+/* 1. Reset básico para quitar espacios en blanco del navegador */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif; /* Una letra más moderna */
+    background-color: #020202;
+}
+
+/* Parte de arriba */
+.header {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;     
+    text-decoration: none;
+    padding: 10px 5%;        
+    color: white;
+    width: 100%;  
+    list-style: none;           
+}
+
+
+.header nav ul {
+    display: flex;          
+    list-style: none;       
+    gap: 30px;              
+}
+
+.header nav ul li a {
+
+    color: white;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: color 0.3s; 
+    list-style: none;
+    
+}
+
+/* Efecto al pasar el ratón */
+.header nav ul li a:hover {
+    color: #ffca28;         
+}
+
+
+/* Logo */
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.imgLogo {
+    margin: 2%;
+    height: 100px;           
+    width: auto;           
+    border-radius: 55px;   
+    box-shadow: inset 0px 2px 5px rgba(0, 0,0, 0.5);
+    color:white;
+}
+
+.JavalonIMG {
+    width: 60%;
+    height: 80%;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 3%;
+    border-radius: 7px;
+    box-shadow: 5px 5px 500px 5px #9696955d;
+}
+
+.main-info :hover {
+    box-shadow: 7px 7px 500px 7px #efc443c0;
+}
+
+
+ /* Ejercicios  */
+
+
+.box {
+    
+    color: #fff;
+    background-color: rgb(54, 53, 53);
+    
+    align-items: center;
+    justify-content: center;
+    margin: 5%;
+    padding: 5%;
+    border-radius: 25px;
+   
+
+}
+
+.content {
+    color: white;
+    margin: 0;
+    margin-top: 25%;
+    padding: 0;
+}
+
+.info-bottom {
+    background-color: rgb(54, 53, 53);
+}
+
+/* tabla */ 
+.tabla-excel {
+    background-color: white !important;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+    
+    /* Une los bordes y permite redondear las esquinas */
+    border-collapse: separate; 
+    border-spacing: 0;
+    
+    /* Borde exterior redondeado */
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* Estilo para las celdas (filas y columnas) */
+.tabla-excel td {
+    padding: 12px 25px;
+    border-bottom: 10px solid #e0e0e0;
+    border-right: 10px solid #e0e0e0;
+    text-align: center;
+    background-color: white !important;
+
+}
+
+/* Quita la línea vertical sobrante en la última columna */
+.tabla-excel td:last-child {
+    border-right: none;
+    background-color: white !important;
+}
+
+/* Quita la línea horizontal sobrante en la última fila */
+.tabla-excel tr:last-child td {
+    border-bottom: none;
+     background-color: white !important;
+}
+
+/* Estilo para los textos dentro de la tabla */
+.tabla-excel h2 {
+    margin: 0;
+    color: black !important;
+    font-size: 16px;
+    font-family: sans-serif;
+     background-color: white !important;
+}
+
+.tabla-excel a {
+    color: #3498db !important;
+    font-weight: bold;
+    text-decoration: none;
+    font-family: sans-serif;
+     background-color: white !important;
+}
+
+.tabla-excel a:hover {
+    text-decoration: underline;
+}
+
+

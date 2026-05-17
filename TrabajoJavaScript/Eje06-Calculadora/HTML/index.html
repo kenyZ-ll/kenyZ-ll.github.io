@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="../../CSS-DEFAULT/default.css">
+</head>
+<body>
+      <!-- Parte por defecto de todas las paginas -->
+        <!--Texto y logo de  la pagina-->
+    <div class="header">
+        <h2 class="text-logo">Trabajo Final <i style="color:#efc443c0;">JavaScript</i>  </h2>
+        <div class="logo">
+
+            <a href="#container">
+                <img src="../../IMGS/logopage.png" alt="Logo" class="imgLogo" >
+            </a>
+
+        </div>
+        <!-- MENU DE LA PAGINA-->
+        <nav>
+            <ul>
+                <li> <a href="../../main/HTML/index.html"> Home </a> </li>
+             <!--   <li> <a href="../../MAIN/HTML/index.html#content"  >      Ejercicios    </a> </li> -->
+                <details>
+                    <summary>Ejercicios</summary>
+                    <ul>
+                        <li><a href="../../Eje01-TablasMultiplicar/HTML/index.html">   Eje01    </a> </li>
+                        <li><a href="../../Eje02-SimuladorDados/HTML/index.html">      Eje02    </a> </li>
+                        <li><a href="../../Eje03-AdivinarNumero/HTML/index.html">      Eje03    </a> </li>
+                        <li><a href="../../Eje04-ListaTareas/HTML/index.html">         Eje04    </a> </li>
+                    </ul>
+
+                </details>
+                <li> <a href="../../Eje06-Calculadora/index.html"  >      Calculadora   </a> </li>
+            </ul>
+        </nav>
+    </div>
+  <!-------------------------------------------->
+  <!--              Calculadora               -->
+  <!-------------------------------------------->
+  <div class="nombre" style="align-items: center;justify-content: center; display: flex; height: 100%; color: white;">
+            <h1>Calculadora</h1>
+        </div>
+    <div class="Eje06-Calculadora">
+        <input type="text" id="pantalla" >
+        <div class="container" id="botones"></div>
+    
+    </div>
+
+    <style>
+        body {
+            background: transparent !important;
+            color: #f4f7ff;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+            min-height: 100vh;
+            margin: 0;
+            padding: 24px;
+        }
+
+        .Eje06-Calculadora {
+            margin: 40px auto;
+            max-width: 380px;
+            padding: 28px;
+            border-radius: 36px;
+            background: rgba(9, 12, 22, 0.92) !important;
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            box-shadow: 0 30px 80px rgba(0, 0, 0, 0.35), inset 0 1px 0 rgba(255, 255, 255, 0.04);
+            backdrop-filter: blur(18px);
+        }
+
+        .Eje06-Calculadora .nombre {
+            margin-bottom: 12px;
+        }
+
+        .Eje06-Calculadora h1 {
+            margin: 0 0 20px;
+            font-size: 2rem;
+            letter-spacing: -0.03em;
+            text-align: center;
+            color: #f8f9ff;
+        }
+
+        #pantalla {
+            width: 100%;
+            border: none;
+            border-radius: 26px;
+            padding: 18px 22px;
+            font-size: 2.2rem;
+            color: #f8f9ff;
+            background: linear-gradient(180deg, rgba(16, 18, 32, 0.96), rgba(12, 14, 24, 0.96));
+            box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.06), 0 22px 40px rgba(0, 0, 0, 0.26);
+            text-align: right;
+            margin-bottom: 22px;
+        }
+
+        #pantalla:focus {
+            outline: none;
+            box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.08), 0 0 0 3px rgba(79, 91, 251, 0.35);
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: repeat(4, minmax(0, 1fr));
+            gap: 14px;
+            padding: 14px;
+            border-radius: 28px;
+            background: rgba(255, 255, 255, 0.06) !important;
+            box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.05);
+        }
+
+        .container button {
+            border: none;
+            border-radius: 22px;
+            min-height: 66px;
+            font-size: 1.2rem;
+            font-weight: 600;
+            color: #eef1ff;
+            background: linear-gradient(180deg, #191d2f, #111421) !important;
+            box-shadow: 0 12px 22px rgba(0, 0, 0, 0.22);
+            transition: transform 0.18s ease, box-shadow 0.18s ease, background 0.18s ease;
+            cursor: pointer;
+        }
+
+        .container button:hover {
+            transform: translateY(-1px);
+            box-shadow: 0 16px 28px rgba(0, 0, 0, 0.28);
+        }
+
+        .container button:active {
+            transform: translateY(1px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.18);
+        }
+
+        .container button:nth-child(4n):not(:last-child) {
+            background: linear-gradient(180deg, #ffba61, #ff9f28) !important;
+            color: #111;
+        }
+
+        .container button:last-child {
+            background: linear-gradient(180deg, #4f5bfb, #6b78ff) !important;
+            color: #f9fbff;
+        }
+
+        .container button:nth-child(1),
+        .container button:nth-child(2),
+        .container button:nth-child(3) {
+            background: rgba(255, 255, 255, 0.12) !important;
+            color: #e8ebff;
+        }
+
+        .container button.btn-cero {
+            grid-column: span 2;
+        }
+    </style>
+
+
+    <script src="../JS/script.js"></script>
+</body>
+</html>
